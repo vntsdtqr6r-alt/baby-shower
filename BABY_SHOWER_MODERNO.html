@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitación Baby Shower</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Quicksand', sans-serif;
+      background: url('https://static.vecteezy.com/system/resources/previews/038/469/398/large_2x/ai-generated-teddy-bears-and-balloons-on-a-pink-background-for-baby-girl-free-photo.jpeg') no-repeat center center fixed, linear-gradient(135deg, #fdf6f9, #f0f8ff);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .slide-in {
+      animation: slideIn 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+      max-width: 420px;
+      width: 92%;
+      background: rgba(255,255,255,0.35);
+      border-radius: 32px;
+      box-shadow: 0 8px 40px 0 rgba(217,127,160,0.18), 0 1.5px 8px 0 rgba(127,160,217,0.10);
+      padding: 38px 30px 32px 30px;
+      text-align: center;
+      position: relative;
+      backdrop-filter: blur(12px) saturate(1.2);
+      border: 1.5px solid rgba(255,255,255,0.35);
+      overflow: hidden;
+    }
+    .decor {
+      position: absolute;
+      width: 60px;
+      opacity: 0.7;
+      z-index: 1;
+    }
+    .decor.top-left { left: -20px; top: -20px; transform: rotate(-15deg); }
+    .decor.bottom-right { right: -20px; bottom: -20px; transform: rotate(10deg); }
+    @keyframes slideIn {
+      from { transform: translateY(100vh); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .baby-icon {
+      width: 90px;
+      margin-bottom: 18px;
+      animation: bounce 1.8s infinite alternate;
+      z-index: 2;
+    }
+    @keyframes bounce {
+      to { transform: translateY(-12px); }
+    }
+    h1 {
+      color: #d97fa0;
+      font-size: 2.3rem;
+      margin-bottom: 0.3em;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      z-index: 2;
+    }
+    h2 {
+      color: #7fa0d9;
+      font-size: 1.25rem;
+      margin-top: 0;
+      margin-bottom: 1.2em;
+      font-weight: 400;
+      z-index: 2;
+    }
+    .details {
+      background: rgba(255,255,255,0.7);
+      border-radius: 16px;
+      padding: 18px 12px;
+      margin-bottom: 1.2em;
+      font-size: 1.12rem;
+      color: #444;
+      box-shadow: 0 2px 12px rgba(127,160,217,0.08);
+      z-index: 2;
+    }
+    .btn {
+      display: block;
+      margin: 16px auto 0 auto;
+      padding: 16px 0;
+      font-size: 1.15rem;
+      border-radius: 16px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      transition: 0.3s;
+      width: 92%;
+      box-shadow: 0 2px 12px rgba(127,160,217,0.10);
+      z-index: 2;
+    }
+    .btn-confirm {
+      background: #7fa0d9;
+    }
+    .btn-confirm:hover {
+      background: #5c7bb8;
+    }
+    .btn-location {
+      background: #d97fa0;
+    }
+    .btn-location:hover {
+      background: #b86a87;
+    }
+    @media (max-width: 600px) {
+      body {
+        align-items: flex-start;
+        min-height: 100vh;
+      }
+      .slide-in {
+        padding: 8vw 2vw 8vw 2vw;
+        max-width: 99vw;
+        width: 99vw;
+        min-height: 90vh;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .baby-icon {
+        width: 60px;
+        margin-bottom: 12px;
+      }
+      h1 {
+        font-size: 1.25rem;
+        margin-bottom: 0.2em;
+      }
+      h2 {
+        font-size: 1.05rem;
+        margin-bottom: 0.7em;
+      }
+      .details {
+        font-size: 0.98rem;
+        padding: 10px 4px;
+      }
+      .btn {
+        font-size: 1rem;
+        padding: 12px 0;
+        width: 98%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-in">
+    <img src="https://cdn-icons-png.flaticon.com/512/2792/2792981.png" alt="Osito tierno" class="baby-icon" />
+    <h1>Baby Shower de Amaia</h1>
+    <h2>🎀 ¡Estás invitado! 🎀</h2>
+    <div class="details">
+      <p><strong>📅 Fecha:</strong> Sábado 20 de Junio – 17:00</p>
+      <p><strong>📍 Lugar:</strong> Ciudad del Este</p>
+      <p><strong>👩‍👩‍👧 Papás:</strong> Clara Perez & Jose Cabral</p>
+      <p><strong>🌸 Padrinos:</strong> Alba Cuevas & Luis Sanchez</p>
+    </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5zldxtHlGsurM2vCwLSIhcAYOQkxQLAYBscLLE8Kkbdg6_g/viewform?usp=publish-editor" 
+       target="_blank" class="btn btn-confirm">✅ Confirmar asistencia</a>
+    <a href="https://www.google.com/maps/place/Ciudad+del+Este,+Paraguay" 
+       target="_blank" class="btn btn-location">📍 Ver ubicación</a>
+  </div>
+</body>
+</html>
